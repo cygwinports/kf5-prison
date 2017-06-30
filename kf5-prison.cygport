@@ -1,0 +1,23 @@
+inherit kf5
+
+NAME="kf5-prison"
+VERSION=5.35.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 barcode generation library"
+DESCRIPTION="A barcode abstraction layer providing uniform access to generation
+of barcodes with data."
+
+PKG_NAMES="libKF5Prison5 libKF5Prison-devel"
+libKF5Prison5_CONTENTS="
+	usr/bin/cygKF5Prison-5.dll
+	usr/share/doc/${NAME}/
+"
+libKF5Prison_devel_REQUIRES="libQt5Gui-devel"
+libKF5Prison_devel_CONTENTS="
+	usr/include/KF5/prison/
+	usr/include/KF5/prison_version.h
+	usr/lib/cmake/KF5Prison/
+	usr/lib/libKF5Prison.dll.a
+	usr/lib/qt5/mkspecs/modules/qt_Prison.pri
+"
