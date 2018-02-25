@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-prison"
-VERSION=5.39.0
+VERSION=5.43.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 barcode generation library"
@@ -10,6 +10,7 @@ of barcodes with data."
 
 PKG_NAMES="libKF5Prison5 libKF5Prison-devel"
 libKF5Prison5_CONTENTS="
+	etc/xdg/prison.categories
 	usr/bin/cygKF5Prison-5.dll
 	usr/share/doc/${NAME}/
 "
